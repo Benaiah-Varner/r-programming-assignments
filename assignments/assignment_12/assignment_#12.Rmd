@@ -1,0 +1,34 @@
+---
+title: 'Assignment #12'
+author: "Benaiah Varner"
+date: "2026-04-13"
+output: html_document
+---
+
+ # Introduction
+    
+    R Markdown is a file format that combines regular writing, R code, and mathematical notation in one document. It is useful because it lets a writer explain their ideas in plain language while also running code and showing the results directly in the same report. This makes it easier to create clear, organized, and reproducible analyses.
+
+# Narrative Paragraph
+
+One of the biggest strengths of R Markdown is that it keeps analysis and explanation together. Instead of writing code in one place and then copying results into a separate report, the code, output, and discussion all stay connected. This reduces mistakes and makes it easier for someone else to understand exactly how the results were produced.
+
+# Math Expressions
+
+R Markdown also supports LaTeX math notation. For example, an inline expression can be written as $\alpha + \beta = \gamma$.
+
+A displayed equation can also be included:
+    
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+    $$
+    
+    This formula represents the sample mean, which is found by adding all observations together and dividing by the number of observations.
+
+# Load Data and Library
+
+```{r setup, message=FALSE, warning=FALSE}
+library(ggplot2)
+
+data(mtcars)
+head(mtcars)
